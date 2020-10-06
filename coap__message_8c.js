@@ -1,0 +1,27 @@
+var coap__message_8c =
+[
+    [ "CoAP_addNewPayloadToMessage", "coap__message_8c.html#a629ca5e849b598bb3a1099f0015f32d0", null ],
+    [ "CoAP_addTextPayload", "coap__message_8c.html#a7d98868ef55982bc7a81cd8e9c87382b", null ],
+    [ "CoAP_AllocRespMsg", "coap__message_8c.html#a8ba19c743ee3216dbdc3763f92a979a1", null ],
+    [ "CoAP_CharIsPrintable", "coap__message_8c.html#adb3b38818f363ee921a95a31fd28bef5", null ],
+    [ "CoAP_CharPrintable", "coap__message_8c.html#a20cce4a642f7707bc09bc63c2bb71c5b", null ],
+    [ "CoAP_CodeName", "coap__message_8c.html#ac4ba5ee9bba547ae533a15abac9f3224", null ],
+    [ "CoAP_CreateMessage", "coap__message_8c.html#aa2b2c22520ed5d7186fc9dddc9419013", null ],
+    [ "CoAP_free_Message", "coap__message_8c.html#ae839c3e3533aaed7ac709d39e347d989", null ],
+    [ "CoAP_free_MsgPayload", "coap__message_8c.html#a018eebcf9fe4f0d6f1c05db3ec4a6ee9", null ],
+    [ "CoAP_GenerateToken", "coap__message_8c.html#a03218212b19f3fc806b410f616dfa949", null ],
+    [ "CoAP_GetNextMid", "coap__message_8c.html#a6669289938731efa1e6178045a629241", null ],
+    [ "CoAP_GetRawSizeOfMessage", "coap__message_8c.html#ad50c32da48f2051873b10bd9e93fa9f9", null ],
+    [ "CoAP_InitIds", "coap__message_8c.html#aef638931b9d4c607329e33137e0deb95", null ],
+    [ "CoAP_MsgIsOlderThan", "coap__message_8c.html#a55911b5e193659c589bce9ec0abb2147", null ],
+    [ "CoAP_MsgIsRequest", "coap__message_8c.html#aba2404880e616b4c59942b5a28178ac3", null ],
+    [ "CoAP_MsgIsResponse", "coap__message_8c.html#a6e70adf9cecebe29d931383c5823b429", null ],
+    [ "CoAP_ParseMessageFromDatagram", "coap__message_8c.html#a2a5bcb4e302815ce5006a1830fbc8997", null ],
+    [ "CoAP_PrintMsg", "coap__message_8c.html#ad2ca39431da5fdf114e82df4ef21a672", null ],
+    [ "CoAP_PrintResultValue", "coap__message_8c.html#ab95485eaf11938e49f6e368f9852c794", null ],
+    [ "CoAP_SendEmptyAck", "coap__message_8c.html#ab6b7ff06077cfea17ddd5552f63554f4", null ],
+    [ "CoAP_SendEmptyRST", "coap__message_8c.html#a2d0b0949bac8868b9255af8475ac9944", null ],
+    [ "CoAP_SendMsg", "coap__message_8c.html#a0f69420b233c94aea589a9f3f992fa32", null ],
+    [ "CoAP_SendShortResp", "coap__message_8c.html#a61bebcd39d68188eb9f5735fa61c605f", null ],
+    [ "CoAP_TokenEqual", "coap__message_8c.html#afd5ac613537a9f7b29a2f96f008b1d0e", null ]
+];
