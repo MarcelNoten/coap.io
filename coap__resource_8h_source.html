@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: coap_resource.h Source File</title>
+<title>Lobaro Coap library: C:/Users/MarcelNotenboom/Desktop/Lobaro_doxygen/src/coap_resource.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
-   &#160;<span id="projectnumber">no version</span>
+   <div id="projectname">Lobaro Coap library
    </div>
-   <div id="projectbrief">Synopsis</div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,7 +95,7 @@ $(document).ready(function(){initNavTree('coap__resource_8h_source.html',''); in
 <div class="title">coap_resource.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="coap__resource_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*******************************************************************************</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*******************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (c)  2015  Dipl.-Ing. Tobias Rohde, http://www.lobaro.com</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
@@ -121,50 +119,37 @@ $(document).ready(function(){initNavTree('coap__resource_8h_source.html',''); in
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef SRC_COAP_COAP_RES_H_</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define SRC_COAP_COAP_RES_H_</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="coap__resource_8h.html#a971ca33b865ac761692b100d05d4aef0">   25</a></span>&#160;<span class="keyword">typedef</span> uint32_t (* <a class="code" href="coap__resource_8h.html#a971ca33b865ac761692b100d05d4aef0">CoAP_ResourceGetETag_fPtr_t</a>)();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">typedef</span> uint32_t (* CoAP_ResourceGetETag_fPtr_t)();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="coap__resource_8h.html#a1d0627631710ad05c89bdabb9e5871d2">   27</a></span>&#160;<span class="keyword">typedef</span> bool (* <a class="code" href="coap__resource_8h.html#a1d0627631710ad05c89bdabb9e5871d2">WriteBuf_fn</a>)(uint8_t* data, uint32_t len);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">typedef</span> bool (* WriteBuf_fn)(uint8_t* data, uint32_t len);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>* <a class="code" href="coap__resource_8h.html#a1883cabee4441d211af9d97d498d8e60">CoAP_FindResourceByUri</a>(<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>* pResListToSearchIn, <a class="code" href="struct_co_a_p__option.html">CoAP_option_t</a>* pOptionsToMatch);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="liblobaro__coap_8h.html#a243112826e1395fb46ae2e1da1baca83">CoAP_Result_t</a> <a class="code" href="coap__resource_8h.html#ae9b508d72c44a1f98e303e5fe77314ea">CoAP_NotifyResourceObservers</a>(<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>* pRes);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="liblobaro__coap_8h.html#a243112826e1395fb46ae2e1da1baca83">CoAP_Result_t</a> <a class="code" href="coap__resource_8h.html#ab8573f8cbf91f9c55875924dbf2ba834">CoAP_FreeResource</a>(<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>** pResource);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>* CoAP_FindResourceByUri(<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>* pResListToSearchIn, <a class="code" href="struct_co_a_p__option.html">CoAP_option_t</a>* pOptionsToMatch);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;CoAP_Result_t CoAP_NotifyResourceObservers(<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>* pRes);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;CoAP_Result_t CoAP_FreeResource(<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>** pResource);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="coap__resource_8h.html#a2daa31d8d403ef04364abdce9f4fd722">CoAP_PrintResource</a>(<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>* pRes);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="coap__resource_8h.html#a9999be0623e012650dcdabe44e188a52">CoAP_PrintAllResources</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> CoAP_PrintResource(<a class="code" href="struct_co_a_p___res.html">CoAP_Res_t</a>* pRes);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> CoAP_PrintAllResources();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="coap__resource_8h.html#a124184cee0db77dc1bd85d0f0eeb68b7">CoAP_InitResources</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> CoAP_InitResources();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="liblobaro__coap_8h.html#a243112826e1395fb46ae2e1da1baca83">CoAP_Result_t</a> <a class="code" href="coap__resource_8h.html#a49d055953bb8a453f07ed57090084429">CoAP_NVsaveObservers</a>(<a class="code" href="coap__resource_8h.html#a1d0627631710ad05c89bdabb9e5871d2">WriteBuf_fn</a> writeBufFn);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="liblobaro__coap_8h.html#a243112826e1395fb46ae2e1da1baca83">CoAP_Result_t</a> <a class="code" href="coap__resource_8h.html#ab6c3ed2a6617510bde3f43005cc705f0">CoAP_NVloadObservers</a>(uint8_t* pRawPage);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;CoAP_Result_t CoAP_NVsaveObservers(WriteBuf_fn writeBufFn);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;CoAP_Result_t CoAP_NVloadObservers(uint8_t* pRawPage);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="liblobaro__coap_8h.html#a243112826e1395fb46ae2e1da1baca83">CoAP_Result_t</a> <a class="code" href="coap__resource_8h.html#ade74914c4a7d9dd03cfd1afcdd15561d">CoAP_RemoveObserverFromResource</a>(<a class="code" href="struct_co_a_p___observer.html">CoAP_Observer_t</a>** pObserverList, <a class="code" href="liblobaro__coap_8h.html#a6bdbd1778db04cff10bd7a726a8f51d0">SocketHandle_t</a> socketHandle, <a class="code" href="struct_net_ep__t.html">NetEp_t</a>* pRemoteEP, <a class="code" href="struct_co_a_p___token__t.html">CoAP_Token_t</a> token);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;CoAP_Result_t CoAP_RemoveObserverFromResource(<a class="code" href="struct_co_a_p___observer.html">CoAP_Observer_t</a>** pObserverList, SocketHandle_t socketHandle, <a class="code" href="struct_net_ep__t.html">NetEp_t</a>* pRemoteEP, <a class="code" href="struct_co_a_p___token__t.html">CoAP_Token_t</a> token);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SRC_COAP_COAP_RESOURCES_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="acoap__resource_8h_html_a1d0627631710ad05c89bdabb9e5871d2"><div class="ttname"><a href="coap__resource_8h.html#a1d0627631710ad05c89bdabb9e5871d2">WriteBuf_fn</a></div><div class="ttdeci">bool(* WriteBuf_fn)(uint8_t *data, uint32_t len)</div><div class="ttdef"><b>Definition:</b> coap_resource.h:27</div></div>
-<div class="ttc" id="acoap__resource_8h_html_ade74914c4a7d9dd03cfd1afcdd15561d"><div class="ttname"><a href="coap__resource_8h.html#ade74914c4a7d9dd03cfd1afcdd15561d">CoAP_RemoveObserverFromResource</a></div><div class="ttdeci">CoAP_Result_t CoAP_RemoveObserverFromResource(CoAP_Observer_t **pObserverList, SocketHandle_t socketHandle, NetEp_t *pRemoteEP, CoAP_Token_t token)</div><div class="ttdoc">CoAP_RemoveObserverFromResource.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:444</div></div>
 <div class="ttc" id="astruct_net_ep__t_html"><div class="ttname"><a href="struct_net_ep__t.html">NetEp_t</a></div><div class="ttdef"><b>Definition:</b> liblobaro_coap.h:110</div></div>
-<div class="ttc" id="acoap__resource_8h_html_a124184cee0db77dc1bd85d0f0eeb68b7"><div class="ttname"><a href="coap__resource_8h.html#a124184cee0db77dc1bd85d0f0eeb68b7">CoAP_InitResources</a></div><div class="ttdeci">void CoAP_InitResources()</div><div class="ttdoc">CoAP_InitResources.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:240</div></div>
-<div class="ttc" id="acoap__resource_8h_html_a49d055953bb8a453f07ed57090084429"><div class="ttname"><a href="coap__resource_8h.html#a49d055953bb8a453f07ed57090084429">CoAP_NVsaveObservers</a></div><div class="ttdeci">CoAP_Result_t CoAP_NVsaveObservers(WriteBuf_fn writeBufFn)</div><div class="ttdoc">CoAP_NVsaveObservers.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:36</div></div>
 <div class="ttc" id="astruct_co_a_p___observer_html"><div class="ttname"><a href="struct_co_a_p___observer.html">CoAP_Observer</a></div><div class="ttdef"><b>Definition:</b> liblobaro_coap.h:270</div></div>
-<div class="ttc" id="acoap__resource_8h_html_a971ca33b865ac761692b100d05d4aef0"><div class="ttname"><a href="coap__resource_8h.html#a971ca33b865ac761692b100d05d4aef0">CoAP_ResourceGetETag_fPtr_t</a></div><div class="ttdeci">uint32_t(* CoAP_ResourceGetETag_fPtr_t)()</div><div class="ttdef"><b>Definition:</b> coap_resource.h:25</div></div>
-<div class="ttc" id="acoap__resource_8h_html_a1883cabee4441d211af9d97d498d8e60"><div class="ttname"><a href="coap__resource_8h.html#a1883cabee4441d211af9d97d498d8e60">CoAP_FindResourceByUri</a></div><div class="ttdeci">CoAP_Res_t * CoAP_FindResourceByUri(CoAP_Res_t *pResListToSearchIn, CoAP_option_t *pOptionsToMatch)</div><div class="ttdoc">CoAP_FindResourceByUri.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:323</div></div>
 <div class="ttc" id="astruct_co_a_p___res_html"><div class="ttname"><a href="struct_co_a_p___res.html">CoAP_Res</a></div><div class="ttdef"><b>Definition:</b> liblobaro_coap.h:306</div></div>
-<div class="ttc" id="acoap__resource_8h_html_ab6c3ed2a6617510bde3f43005cc705f0"><div class="ttname"><a href="coap__resource_8h.html#ab6c3ed2a6617510bde3f43005cc705f0">CoAP_NVloadObservers</a></div><div class="ttdeci">CoAP_Result_t CoAP_NVloadObservers(uint8_t *pRawPage)</div><div class="ttdoc">CoAP_NVloadObservers.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:105</div></div>
 <div class="ttc" id="astruct_co_a_p___token__t_html"><div class="ttname"><a href="struct_co_a_p___token__t.html">CoAP_Token_t</a></div><div class="ttdef"><b>Definition:</b> liblobaro_coap.h:242</div></div>
-<div class="ttc" id="aliblobaro__coap_8h_html_a243112826e1395fb46ae2e1da1baca83"><div class="ttname"><a href="liblobaro__coap_8h.html#a243112826e1395fb46ae2e1da1baca83">CoAP_Result_t</a></div><div class="ttdeci">CoAP_Result_t</div><div class="ttdef"><b>Definition:</b> liblobaro_coap.h:38</div></div>
-<div class="ttc" id="aliblobaro__coap_8h_html_a6bdbd1778db04cff10bd7a726a8f51d0"><div class="ttname"><a href="liblobaro__coap_8h.html#a6bdbd1778db04cff10bd7a726a8f51d0">SocketHandle_t</a></div><div class="ttdeci">void * SocketHandle_t</div><div class="ttdef"><b>Definition:</b> liblobaro_coap.h:155</div></div>
-<div class="ttc" id="acoap__resource_8h_html_ae9b508d72c44a1f98e303e5fe77314ea"><div class="ttname"><a href="coap__resource_8h.html#ae9b508d72c44a1f98e303e5fe77314ea">CoAP_NotifyResourceObservers</a></div><div class="ttdeci">CoAP_Result_t CoAP_NotifyResourceObservers(CoAP_Res_t *pRes)</div><div class="ttdoc">CoAP_NotifyResourceObservers.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:395</div></div>
-<div class="ttc" id="acoap__resource_8h_html_a2daa31d8d403ef04364abdce9f4fd722"><div class="ttname"><a href="coap__resource_8h.html#a2daa31d8d403ef04364abdce9f4fd722">CoAP_PrintResource</a></div><div class="ttdeci">void CoAP_PrintResource(CoAP_Res_t *pRes)</div><div class="ttdoc">CoAP_PrintResource.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:406</div></div>
-<div class="ttc" id="acoap__resource_8h_html_a9999be0623e012650dcdabe44e188a52"><div class="ttname"><a href="coap__resource_8h.html#a9999be0623e012650dcdabe44e188a52">CoAP_PrintAllResources</a></div><div class="ttdeci">void CoAP_PrintAllResources()</div><div class="ttdoc">CoAP_PrintAllResources.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:428</div></div>
 <div class="ttc" id="astruct_co_a_p__option_html"><div class="ttname"><a href="struct_co_a_p__option.html">CoAP_option</a></div><div class="ttdef"><b>Definition:</b> liblobaro_coap.h:189</div></div>
-<div class="ttc" id="acoap__resource_8h_html_ab8573f8cbf91f9c55875924dbf2ba834"><div class="ttname"><a href="coap__resource_8h.html#ab8573f8cbf91f9c55875924dbf2ba834">CoAP_FreeResource</a></div><div class="ttdeci">CoAP_Result_t CoAP_FreeResource(CoAP_Res_t **pResource)</div><div class="ttdoc">CoAP_FreeResource.</div><div class="ttdef"><b>Definition:</b> coap_resource.c:275</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="coap__resource_8h.html">coap_resource.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_316d6101d431efdd778ad14d21f8ad87.html">MarcelNotenboom</a></li><li class="navelem"><a class="el" href="dir_4c7f952422c2a6aecdbb987f1735c77d.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_3e1dc777a41a29db4831ce2a8fdea978.html">Lobaro_doxygen</a></li><li class="navelem"><a class="el" href="dir_5ca43eafce667870f6d39fb860f79df7.html">src</a></li><li class="navelem"><b>coap_resource.h</b></li>
     <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>

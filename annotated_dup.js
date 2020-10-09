@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "CoAP_API_t", "struct_co_a_p___a_p_i__t.html", "struct_co_a_p___a_p_i__t" ],
+    [ "CoAP_blockwise_option_t", "struct_co_a_p__blockwise__option__t.html", "struct_co_a_p__blockwise__option__t" ],
     [ "CoAP_Interaction", "struct_co_a_p___interaction.html", "struct_co_a_p___interaction" ],
     [ "CoAP_Message_t", "struct_co_a_p___message__t.html", "struct_co_a_p___message__t" ],
     [ "CoAP_Observer", "struct_co_a_p___observer.html", "struct_co_a_p___observer" ],
@@ -8,6 +9,7 @@ var annotated_dup =
     [ "CoAP_Res", "struct_co_a_p___res.html", "struct_co_a_p___res" ],
     [ "CoAP_ResOpts_t", "struct_co_a_p___res_opts__t.html", "struct_co_a_p___res_opts__t" ],
     [ "CoAP_Socket_t", "struct_co_a_p___socket__t.html", "struct_co_a_p___socket__t" ],
+    [ "CoAP_SocketCtrl_t", "struct_co_a_p___socket_ctrl__t.html", "struct_co_a_p___socket_ctrl__t" ],
     [ "CoAP_t", "struct_co_a_p__t.html", "struct_co_a_p__t" ],
     [ "CoAP_Token_t", "struct_co_a_p___token__t.html", "struct_co_a_p___token__t" ],
     [ "MetaInfo_RfPath_t", "struct_meta_info___rf_path__t.html", "struct_meta_info___rf_path__t" ],

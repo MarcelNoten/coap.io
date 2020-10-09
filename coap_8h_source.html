@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: coap.h Source File</title>
+<title>Lobaro Coap library: C:/Users/MarcelNotenboom/Desktop/Lobaro_doxygen/src/coap.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
-   &#160;<span id="projectnumber">no version</span>
+   <div id="projectname">Lobaro Coap library
    </div>
-   <div id="projectbrief">Synopsis</div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,7 +95,7 @@ $(document).ready(function(){initNavTree('coap_8h_source.html',''); initResizabl
 <div class="title">coap.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="coap_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*******************************************************************************</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*******************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (c)  2015  Dipl.-Ing. Tobias Rohde, http://www.lobaro.com</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
@@ -129,7 +127,7 @@ $(document).ready(function(){initNavTree('coap_8h_source.html',''); initResizabl
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//&quot;glue&quot; and actual system related functions</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//go there to see what to do adapting the library to your platform</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;interface/coap_interface.h&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="liblobaro__coap_8h.html">liblobaro_coap.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;liblobaro_coap.h&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//Internal stack functions</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
@@ -140,15 +138,15 @@ $(document).ready(function(){initNavTree('coap_8h_source.html',''); initResizabl
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if (configUSE_16_BIT_TICKS == 1)</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define timeAfter(a,b)    (((int16_t)(a) - (int16_t)(b)) &gt;= 0)</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="coap_8h.html#a319cd0896838b27dda83172211e549a9">   44</a></span>&#160;<span class="preprocessor">#define timeAfter(a,b)    (((int32_t)(a) - (int32_t)(b)) &gt;= 0)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define timeAfter(a,b)    (((int32_t)(a) - (int32_t)(b)) &gt;= 0)</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="coap_8h.html#a6303f7392a2d06be5a121c54278d561b">   47</a></span>&#160;<span class="preprocessor">#define MAX_PAYLOAD_SIZE        (1024)  //should not exceed 1024 bytes (see 4.6 RFC7252) (must be power of 2 to fit with blocksize option!)</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="coap_8h.html#a40430c85afc57a55174d80a4766be080">   48</a></span>&#160;<span class="preprocessor">#define PREFERED_PAYLOAD_SIZE    (64)   //also size of inital pResp message payload buffer in user resource handler</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define MAX_PAYLOAD_SIZE        (1024)  //should not exceed 1024 bytes (see 4.6 RFC7252) (must be power of 2 to fit with blocksize option!)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define PREFERED_PAYLOAD_SIZE    (64)   //also size of inital pResp message payload buffer in user resource handler</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// Simulate network loss, set percentage of uploads or downloads that are dropped randomly:</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="coap_8h.html#a3fe4a8dbff8bdd8e70b4eb03b11cdb52">   51</a></span>&#160;<span class="preprocessor">#define DEBUG_RANDOM_DROP_INCOMING_PERCENTAGE 0</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="coap_8h.html#abca4720bc4a69b945e1c189eed5f38d3">   52</a></span>&#160;<span class="preprocessor">#define DEBUG_RANDOM_DROP_OUTGOING_PERCENTAGE 0</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#define DEBUG_RANDOM_DROP_INCOMING_PERCENTAGE 0</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define DEBUG_RANDOM_DROP_OUTGOING_PERCENTAGE 0</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// check for valid `MAX_PAYLOAD_SIZE` at compile time</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// allowing other values here will not work!</span></div>
@@ -156,23 +154,23 @@ $(document).ready(function(){initNavTree('coap_8h_source.html',''); initResizabl
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#error &quot;MAX_PAYLOAD_SIZE must be power of two and 32&lt;=MAX_PAYLOAD_SIZE&lt;=1024&quot;</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="coap_8h.html#a0cc059ba01b6be3d8abe18cc96ab2221">   60</a></span>&#160;<span class="preprocessor">#define COAP_VERSION (1u)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define COAP_VERSION (1u)</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//V1.2</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="coap_8h.html#a06d493ab27097cd469527e049b460714">   63</a></span>&#160;<span class="preprocessor">#define LOBARO_COAP_VERSION_MAJOR (1u)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="coap_8h.html#aaafd47e51ad9ca36f8a57b254342dfef">   64</a></span>&#160;<span class="preprocessor">#define LOBARO_COAP_VERSION_MINOR (2u)</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define LOBARO_COAP_VERSION_MAJOR (1u)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define LOBARO_COAP_VERSION_MINOR (2u)</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coap__options_8h.html">coap_options.h</a>&quot;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coap__message_8h.html">coap_message.h</a>&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &quot;coap_options.h&quot;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#include &quot;coap_message.h&quot;</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#include &quot;option-types/coap_option_blockwise.h&quot;</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#include &quot;option-types/coap_option_ETag.h&quot;</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &quot;option-types/coap_option_cf.h&quot;</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#include &quot;option-types/coap_option_uri.h&quot;</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#include &quot;option-types/coap_option_observe.h&quot;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coap__resource_8h.html">coap_resource.h</a>&quot;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coap__interaction_8h.html">coap_interaction.h</a>&quot;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coap__main_8h.html">coap_main.h</a>&quot;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="diagnostic_8h.html">diagnostic.h</a>&quot;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#include &quot;coap_resource.h&quot;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;coap_interaction.h&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#include &quot;coap_main.h&quot;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#include &quot;diagnostic.h&quot;</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
@@ -182,17 +180,10 @@ $(document).ready(function(){initNavTree('coap_8h_source.html',''); initResizabl
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COAP_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="acoap__options_8h_html"><div class="ttname"><a href="coap__options_8h.html">coap_options.h</a></div></div>
-<div class="ttc" id="acoap__main_8h_html"><div class="ttname"><a href="coap__main_8h.html">coap_main.h</a></div></div>
-<div class="ttc" id="acoap__interaction_8h_html"><div class="ttname"><a href="coap__interaction_8h.html">coap_interaction.h</a></div></div>
-<div class="ttc" id="acoap__message_8h_html"><div class="ttname"><a href="coap__message_8h.html">coap_message.h</a></div></div>
-<div class="ttc" id="adiagnostic_8h_html"><div class="ttname"><a href="diagnostic_8h.html">diagnostic.h</a></div></div>
-<div class="ttc" id="aliblobaro__coap_8h_html"><div class="ttname"><a href="liblobaro__coap_8h.html">liblobaro_coap.h</a></div></div>
-<div class="ttc" id="acoap__resource_8h_html"><div class="ttname"><a href="coap__resource_8h.html">coap_resource.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="coap_8h.html">coap.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_316d6101d431efdd778ad14d21f8ad87.html">MarcelNotenboom</a></li><li class="navelem"><a class="el" href="dir_4c7f952422c2a6aecdbb987f1735c77d.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_3e1dc777a41a29db4831ce2a8fdea978.html">Lobaro_doxygen</a></li><li class="navelem"><a class="el" href="dir_5ca43eafce667870f6d39fb860f79df7.html">src</a></li><li class="navelem"><b>coap.h</b></li>
     <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>

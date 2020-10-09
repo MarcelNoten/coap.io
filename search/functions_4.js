@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['pack_5foptionsfromlist_470',['pack_OptionsFromList',['../coap__options_8c.html#af5fbf18cb230b5d4aa427f698918ce30',1,'pack_OptionsFromList(uint8_t *pDestArr, uint16_t *pBytesWritten, CoAP_option_t *pOptionsListBegin):&#160;coap_options.c'],['../coap__options_8h.html#a2ca18115ffdaf62a391362757732c2ac',1,'pack_OptionsFromList(uint8_t *pDestArr, uint16_t *pBytesWritten, CoAP_option_t *pOptionsListBegin):&#160;coap_options.c']]],
-  ['parse_5foptionsfromraw_471',['parse_OptionsFromRaw',['../coap__options_8c.html#a8769aec71cfc6678c491e0c98b79562d',1,'parse_OptionsFromRaw(uint8_t *srcArr, uint16_t srcLength, uint8_t **pPayloadBeginInSrc, CoAP_option_t **pOptionsListBegin):&#160;coap_options.c'],['../coap__options_8h.html#a440f163012255ee9828b12bab712e138',1,'parse_OptionsFromRaw(uint8_t *srcArr, uint16_t srcLength, uint8_t **pPayloadBeginInSrc, CoAP_option_t **pOptionsListBegin):&#160;coap_options.c']]],
-  ['printendpoint_472',['PrintEndpoint',['../diagnostic_8c.html#ac2882684ae617af36b68caa20ab1cb5a',1,'PrintEndpoint(const NetEp_t *ep):&#160;diagnostic.c'],['../diagnostic_8h.html#a435769aaffe2d871e627d8d904329792',1,'PrintEndpoint(const NetEp_t *ep):&#160;diagnostic.c']]],
-  ['printinteractions_473',['PrintInteractions',['../diagnostic_8c.html#a595a6737ddecf0f02b1d26a8314658e4',1,'PrintInteractions(CoAP_Interaction_t *pInteractions):&#160;diagnostic.c'],['../diagnostic_8h.html#adf0121c51aad9eb0d75aae2c4df8e748',1,'PrintInteractions(CoAP_Interaction_t *pInteractions):&#160;diagnostic.c']]],
-  ['printtoken_474',['PrintToken',['../diagnostic_8c.html#ae06354dcc521b611d4bf4934fa5e09dd',1,'diagnostic.c']]]
-];

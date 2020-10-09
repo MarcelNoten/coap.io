@@ -1,11 +1,15 @@
 var searchData=
 [
-  ['ack_0',['ACK',['../liblobaro__coap_8h.html#a613fdfde55805d2cdc402070e95b0169a41246e9c8691b7e33bc79b345e06b48e',1,'liblobaro_coap.h']]],
-  ['ack_5frandom_5ffactor_1',['ACK_RANDOM_FACTOR',['../coap__main_8h.html#aef339b3c4338bdb86736d679dc944b9e',1,'coap_main.h']]],
-  ['ack_5fsend_2',['ACK_SEND',['../coap__interaction_8h.html#a2e06342af9dc47a72c951a65b53f7332abc3645a2798e52d2ea63dc3ec317f007',1,'coap_interaction.h']]],
-  ['ack_5ftimeout_3',['ACK_TIMEOUT',['../coap__main_8h.html#a5e53751a27267574b92f23d01951a259',1,'coap_main.h']]],
-  ['acktimeout_4',['AckTimeout',['../struct_co_a_p___interaction.html#a1275d08740fca392280f932d7d08c68b',1,'CoAP_Interaction']]],
-  ['alive_5',['Alive',['../struct_co_a_p___socket__t.html#a5c3c7997fd7860da0b95743616f00b0d',1,'CoAP_Socket_t']]],
-  ['allowedmethods_6',['AllowedMethods',['../struct_co_a_p___res_opts__t.html#a4c55b5187e0b7d586bd7d81c7a9a2289',1,'CoAP_ResOpts_t']]],
-  ['api_7',['api',['../struct_co_a_p__t.html#aefc9358bc3599fb37dc059520b8a5650',1,'CoAP_t']]]
+  ['coap_5fapi_5ft_0',['CoAP_API_t',['../struct_co_a_p___a_p_i__t.html',1,'']]],
+  ['coap_5fblockwise_5foption_5ft_1',['CoAP_blockwise_option_t',['../struct_co_a_p__blockwise__option__t.html',1,'']]],
+  ['coap_5finteraction_2',['CoAP_Interaction',['../struct_co_a_p___interaction.html',1,'']]],
+  ['coap_5fmessage_5ft_3',['CoAP_Message_t',['../struct_co_a_p___message__t.html',1,'']]],
+  ['coap_5fobserver_4',['CoAP_Observer',['../struct_co_a_p___observer.html',1,'']]],
+  ['coap_5foption_5',['CoAP_option',['../struct_co_a_p__option.html',1,'']]],
+  ['coap_5fres_6',['CoAP_Res',['../struct_co_a_p___res.html',1,'']]],
+  ['coap_5fresopts_5ft_7',['CoAP_ResOpts_t',['../struct_co_a_p___res_opts__t.html',1,'']]],
+  ['coap_5fsocket_5ft_8',['CoAP_Socket_t',['../struct_co_a_p___socket__t.html',1,'']]],
+  ['coap_5fsocketctrl_5ft_9',['CoAP_SocketCtrl_t',['../struct_co_a_p___socket_ctrl__t.html',1,'']]],
+  ['coap_5ft_10',['CoAP_t',['../struct_co_a_p__t.html',1,'']]],
+  ['coap_5ftoken_5ft_11',['CoAP_Token_t',['../struct_co_a_p___token__t.html',1,'']]]
 ];

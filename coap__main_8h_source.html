@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: coap_main.h Source File</title>
+<title>Lobaro Coap library: C:/Users/MarcelNotenboom/Desktop/Lobaro_doxygen/src/coap_main.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
-   &#160;<span id="projectnumber">no version</span>
+   <div id="projectname">Lobaro Coap library
    </div>
-   <div id="projectbrief">Synopsis</div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -97,7 +95,7 @@ $(document).ready(function(){initNavTree('coap__main_8h_source.html',''); initRe
 <div class="title">coap_main.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="coap__main_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*******************************************************************************</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*******************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (c)  2015  Dipl.-Ing. Tobias Rohde, http://www.lobaro.com</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
@@ -121,46 +119,41 @@ $(document).ready(function(){initNavTree('coap__main_8h_source.html',''); initRe
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef COAP_MAIN_H_</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define COAP_MAIN_H_</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="liblobaro__coap_8h.html">liblobaro_coap.h</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coap__interaction_8h.html">coap_interaction.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;liblobaro_coap.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;coap_interaction.h&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="coap__main_8h.html#a19c1de4d392a0409582587174d77dfc1">   28</a></span>&#160;<span class="preprocessor">#define HOLDTIME_AFTER_NON_TRANSACTION_END (0)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="coap__main_8h.html#a1d25669e52e3e6b9373da809535cbb42">   29</a></span>&#160;<span class="preprocessor">#define POSTPONE_WAIT_TIME_SEK (3)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="coap__main_8h.html#ac9b0678ba608526c6b5c8813108af574">   30</a></span>&#160;<span class="preprocessor">#define POSTPONE_MAX_WAIT_TIME (30)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="coap__main_8h.html#a520d4a8a22eea2513912d00836f3e6de">   31</a></span>&#160;<span class="preprocessor">#define CLIENT_MAX_RESP_WAIT_TIME (45)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define HOLDTIME_AFTER_NON_TRANSACTION_END (0)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define POSTPONE_WAIT_TIME_SEK (3)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define POSTPONE_MAX_WAIT_TIME (30)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define CLIENT_MAX_RESP_WAIT_TIME (45)</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="coap__main_8h.html#a70e985e2e9afa2a0e124f40c125f6fca">   33</a></span>&#160;<span class="preprocessor">#define USE_RFC7641_ADVANCED_TRANSMISSION (1) //Update representation of resource during retry of observe sendout</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define USE_RFC7641_ADVANCED_TRANSMISSION (1) //Update representation of resource during retry of observe sendout</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="coap__main_8h.html#a5e53751a27267574b92f23d01951a259">   35</a></span>&#160;<span class="preprocessor">#define ACK_TIMEOUT (4)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="coap__main_8h.html#aef339b3c4338bdb86736d679dc944b9e">   36</a></span>&#160;<span class="preprocessor">#define ACK_RANDOM_FACTOR (1.5)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="coap__main_8h.html#ad7a719f80f7ab6423139a59dbc13b412">   37</a></span>&#160;<span class="preprocessor">#define MAX_RETRANSMIT (3)</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="coap__main_8h.html#a257d984c946faeba4c909d6e62e181bd">   38</a></span>&#160;<span class="preprocessor">#define NSTART (1) //todo implement</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="coap__main_8h.html#a8281b69d971f2cd06003614dad66e6bf">   39</a></span>&#160;<span class="preprocessor">#define DEFAULT_LEISURE (5) //todo implement</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="coap__main_8h.html#a474f1e94e471a9843fa844f89b4e57d3">   40</a></span>&#160;<span class="preprocessor">#define PROBING_RATE (1)        //[client]</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define ACK_TIMEOUT (4)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define ACK_RANDOM_FACTOR (1.5)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define MAX_RETRANSMIT (3)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define NSTART (1) //todo implement</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define DEFAULT_LEISURE (5) //todo implement</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define PROBING_RATE (1)        //[client]</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_co_a_p__t.html">   43</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_co_a_p__t.html#a356f34c23cfe5dd6e8331bdfd8278cf5">   44</a></span>&#160;    <a class="code" href="struct_co_a_p___interaction.html">CoAP_Interaction_t</a> *<a class="code" href="struct_co_a_p__t.html#a356f34c23cfe5dd6e8331bdfd8278cf5">pInteractions</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_co_a_p__t.html#aefc9358bc3599fb37dc059520b8a5650">   45</a></span>&#160;    <a class="code" href="struct_co_a_p___a_p_i__t.html">CoAP_API_t</a> <a class="code" href="struct_co_a_p__t.html#aefc9358bc3599fb37dc059520b8a5650">api</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="struct_co_a_p___interaction.html">CoAP_Interaction_t</a> *pInteractions;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="struct_co_a_p___a_p_i__t.html">CoAP_API_t</a> api;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <a class="code" href="struct_co_a_p__t.html">CoAP_t</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct_co_a_p__t.html">CoAP_t</a> <a class="code" href="coap__main_8h.html#a57bf208ada44f128aefb80ccee145ca4">CoAP</a>; <span class="comment">//Stack global variables</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct_co_a_p__t.html">CoAP_t</a> CoAP; <span class="comment">//Stack global variables</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_co_a_p__t_html_aefc9358bc3599fb37dc059520b8a5650"><div class="ttname"><a href="struct_co_a_p__t.html#aefc9358bc3599fb37dc059520b8a5650">CoAP_t::api</a></div><div class="ttdeci">CoAP_API_t api</div><div class="ttdef"><b>Definition:</b> coap_main.h:45</div></div>
-<div class="ttc" id="acoap__interaction_8h_html"><div class="ttname"><a href="coap__interaction_8h.html">coap_interaction.h</a></div></div>
-<div class="ttc" id="acoap__main_8h_html_a57bf208ada44f128aefb80ccee145ca4"><div class="ttname"><a href="coap__main_8h.html#a57bf208ada44f128aefb80ccee145ca4">CoAP</a></div><div class="ttdeci">CoAP_t CoAP</div><div class="ttdoc">Struct CoAp_t CoAp setts interction to NULL and the api to 0.</div><div class="ttdef"><b>Definition:</b> coap_main.c:25</div></div>
 <div class="ttc" id="astruct_co_a_p___a_p_i__t_html"><div class="ttname"><a href="struct_co_a_p___a_p_i__t.html">CoAP_API_t</a></div><div class="ttdef"><b>Definition:</b> liblobaro_coap.h:327</div></div>
-<div class="ttc" id="aliblobaro__coap_8h_html"><div class="ttname"><a href="liblobaro__coap_8h.html">liblobaro_coap.h</a></div></div>
-<div class="ttc" id="astruct_co_a_p__t_html_a356f34c23cfe5dd6e8331bdfd8278cf5"><div class="ttname"><a href="struct_co_a_p__t.html#a356f34c23cfe5dd6e8331bdfd8278cf5">CoAP_t::pInteractions</a></div><div class="ttdeci">CoAP_Interaction_t * pInteractions</div><div class="ttdef"><b>Definition:</b> coap_main.h:44</div></div>
 <div class="ttc" id="astruct_co_a_p___interaction_html"><div class="ttname"><a href="struct_co_a_p___interaction.html">CoAP_Interaction</a></div><div class="ttdef"><b>Definition:</b> coap_interaction.h:81</div></div>
 <div class="ttc" id="astruct_co_a_p__t_html"><div class="ttname"><a href="struct_co_a_p__t.html">CoAP_t</a></div><div class="ttdef"><b>Definition:</b> coap_main.h:43</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="coap__main_8h.html">coap_main.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_316d6101d431efdd778ad14d21f8ad87.html">MarcelNotenboom</a></li><li class="navelem"><a class="el" href="dir_4c7f952422c2a6aecdbb987f1735c77d.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_3e1dc777a41a29db4831ce2a8fdea978.html">Lobaro_doxygen</a></li><li class="navelem"><a class="el" href="dir_5ca43eafce667870f6d39fb860f79df7.html">src</a></li><li class="navelem"><b>coap_main.h</b></li>
     <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>

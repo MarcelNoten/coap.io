@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['btle_8',['BTLE',['../liblobaro__coap_8h.html#ac03b0fc65d5aaf35096871fd78b0687da231496ec47fcaab0adcdcc0999d10a2e',1,'liblobaro_coap.h']]]
+  ['metainfo_5frfpath_5ft_12',['MetaInfo_RfPath_t',['../struct_meta_info___rf_path__t.html',1,'']]],
+  ['metainfo_5ft_13',['MetaInfo_t',['../struct_meta_info__t.html',1,'']]],
+  ['metainfounion_5ft_14',['MetaInfoUnion_t',['../union_meta_info_union__t.html',1,'']]]
 ];
